@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinnero Web Design | Alta Performance para Gastronomia e Vinhos</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter (Body) & Playfair Display (Headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config for Custom Colors & Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        alabaster: '#FAF9F6',
+                        moss: '#353B25',
+                        wine: '#722F37',
+                        wineLight: '#8a3a44'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #353B25;
+        }
+        /* Subtle pattern for hero section */
+        .hero-pattern {
+            background-image: radial-gradient(#722F37 0.5px, transparent 0.5px), radial-gradient(#722F37 0.5px, #FAF9F6 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+            background-color: #FAF9F6;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-wine selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-alabaster/90 backdrop-blur-md border-b border-moss/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-wine-glass text-wine text-2xl"></i>
+                <span class="font-serif font-bold text-xl text-moss tracking-wide">Vinnero<span class="font-sans font-light text-sm ml-1 text-moss/70">Web Design</span></span>
+            </div>
+            <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-moss hover:bg-moss/90 text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">
+                Falar no WhatsApp
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+            <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="md:hidden text-moss text-2xl">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden">
+        <div class="absolute inset-0 hero-pattern -z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-alabaster -z-10"></div>
+        
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-wine/10 text-wine font-semibold text-sm mb-6 uppercase tracking-wider">
+                Exclusivo para o setor de vinhos e gastronomia
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-moss leading-tight mb-6">
+                A sua presença digital deve refletir o <span class="italic text-wine">padrão do seu negócio</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-moss/80 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                Sites ultrarrápidos e minimalistas de alta performance que destacam o seu produto e convertem visitantes em clientes, deixando a lentidão das plataformas amadoras no passado.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="bg-wine hover:bg-wineLight text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg shadow-wine/20 flex items-center justify-center gap-2 text-lg">
+                    Quero um orçamento
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#solucao" class="bg-transparent border border-moss/30 hover:border-moss text-moss px-8 py-4 rounded-full font-medium transition-all flex items-center justify-center">
+                    Conheça a diferença
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenças (Problema vs Solução) -->
+    <section id="solucao" class="py-24 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-moss mb-4">Por que os sites comuns falham?</h2>
+                <p class="text-moss/70 max-w-2xl mx-auto">A diferença entre afastar um cliente pela lentidão e encantá-lo no primeiro clique.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Problema -->
+                <div class="bg-alabaster border border-red-900/10 p-8 rounded-3xl opacity-80">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-800">
+                            <i class="fa-solid fa-xmark text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-moss">Plataformas Amadoras<br><span class="text-sm font-light text-moss/60">(Ex: Wix, Canva, WordPress genérico)</span></h3>
+                    </div>
+                    <ul class="space-y-4 text-moss/80">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-minus text-red-800/50 mt-1"></i> <strong>Lentidão no carregamento:</strong> Código pesado que faz o cliente desistir antes de abrir.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-minus text-red-800/50 mt-1"></i> <strong>Estética genérica:</strong> Templates que não transmitem o requinte do mundo dos vinhos.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-minus text-red-800/50 mt-1"></i> <strong>Fricção no celular:</strong> Menus confusos e PDFs difíceis de ler na tela pequena.</li>
+                    </ul>
+                </div>
+
+                <!-- Solução -->
+                <div class="bg-moss border border-moss p-8 rounded-3xl shadow-xl shadow-moss/10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-wine flex items-center justify-center text-white">
+                            <i class="fa-solid fa-check text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-alabaster">Vinnero Web Design<br><span class="text-sm font-light text-alabaster/60">(Arquitetura sob medida)</span></h3>
+                    </div>
+                    <ul class="space-y-4 text-alabaster/90">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-plus text-wineLight mt-1"></i> <strong>Carregamento instantâneo:</strong> Código puro e leve (HTML/Tailwind) projetado para abrir em milissegundos.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-plus text-wineLight mt-1"></i> <strong>Design imersivo:</strong> Paleta de cores elegante, focada em destacar rótulos e pratos.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-plus text-wineLight mt-1"></i> <strong>Mobile-first:</strong> Experiência de navegação perfeita para quem busca do smartphone.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quem É (Mercado Especializado) -->
+    <section id="mercado" class="py-24 px-6 bg-alabaster border-y border-moss/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-moss mb-4">Feito para o Mercado Especializado</h2>
+                <p class="text-moss/70 max-w-2xl mx-auto">Nós entendemos a linguagem, a estética e as necessidades de quem trabalha com gastronomia e vinhos.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-moss/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-briefcase text-3xl text-wine mb-4"></i>
+                    <h3 class="text-lg font-bold text-moss mb-2">Representantes</h3>
+                    <p class="text-sm text-moss/70 font-light">Apresente seu portfólio de rótulos com profissionalismo, sem depender de catálogos pesados em PDF.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-moss/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-ship text-3xl text-wine mb-4"></i>
+                    <h3 class="text-lg font-bold text-moss mb-2">Importadoras</h3>
+                    <p class="text-sm text-moss/70 font-light">Fortaleça a sua marca corporativa com um site institucional rápido e focado no seu catálogo de origens.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-moss/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-store text-3xl text-wine mb-4"></i>
+                    <h3 class="text-lg font-bold text-moss mb-2">Lojas Especializadas</h3>
+                    <p class="text-sm text-moss/70 font-light">Venda seus vinhos online com uma infraestrutura robusta, visual elegante e alta conversão de checkout.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-moss/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-utensils text-3xl text-wine mb-4"></i>
+                    <h3 class="text-lg font-bold text-moss mb-2">Restaurantes e Wine Bars</h3>
+                    <p class="text-sm text-moss/70 font-light">Atraia clientes locais com SEO otimizado, reservas integradas e uma apresentação impecável do ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos e Investimento -->
+    <section id="planos" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-moss mb-4">Planos e Investimento</h2>
+                <p class="text-moss/70 max-w-2xl mx-auto">Transparência desde o primeiro contato. Escolha o formato que melhor se adapta ao momento do seu negócio.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Plano 1: Assinatura Site -->
+                <div class="bg-alabaster p-8 rounded-3xl border border-moss/10 shadow-sm flex flex-col hover:border-moss/30 transition-colors">
+                    <h3 class="text-xl font-bold text-moss mb-2">Presença Digital</h3>
+                    <p class="text-wine font-semibold text-sm mb-6 uppercase tracking-wider">Assinatura</p>
+                    <div class="mb-6 flex items-end gap-1">
+                        <span class="text-4xl font-serif font-bold text-moss">R$ 250</span>
+                        <span class="text-moss/60 font-light pb-1">/mês</span>
+                    </div>
+                    <ul class="space-y-4 text-moss/80 font-light text-sm mb-8 flex-1">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wine mt-0.5"></i> Site One-Page de alta conversão.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wine mt-0.5"></i> Hospedagem veloz e domínio inclusos.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wine mt-0.5"></i> Atualizações e manutenção mensais.</li>
+                    </ul>
+                    <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="w-full text-center py-3 rounded-full border border-moss text-moss hover:bg-moss hover:text-white transition-colors font-medium">Selecionar Plano</a>
+                </div>
+
+                <!-- Plano 2: E-commerce (Destaque) -->
+                <div class="bg-moss p-8 rounded-3xl shadow-2xl shadow-moss/20 flex flex-col relative transform md:-translate-y-4 border border-moss">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-wine text-white text-xs font-bold uppercase tracking-wider py-1.5 px-5 rounded-full whitespace-nowrap shadow-lg">
+                        Ideal para Vendas Online
+                    </div>
+                    <h3 class="text-xl font-bold text-alabaster mb-2 mt-2">E-commerce Especializado</h3>
+                    <p class="text-wineLight font-semibold text-sm mb-6 uppercase tracking-wider">Assinatura</p>
+                    <div class="mb-6 flex items-end gap-1">
+                        <span class="text-4xl font-serif font-bold text-alabaster">R$ 500</span>
+                        <span class="text-alabaster/60 font-light pb-1">/mês</span>
+                    </div>
+                    <ul class="space-y-4 text-alabaster/80 font-light text-sm mb-8 flex-1">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wineLight mt-0.5"></i> Loja virtual completa.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wineLight mt-0.5"></i> Setup de infraestrutura e meios de pagamento.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wineLight mt-0.5"></i> Gestão contínua e suporte premium da operação.</li>
+                    </ul>
+                    <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="w-full text-center py-3 rounded-full bg-wine text-white hover:bg-wineLight transition-colors font-medium shadow-lg shadow-wine/20">Selecionar Plano</a>
+                </div>
+
+                <!-- Plano 3: Sob Medida -->
+                <div class="bg-alabaster p-8 rounded-3xl border border-moss/10 shadow-sm flex flex-col hover:border-moss/30 transition-colors">
+                    <h3 class="text-xl font-bold text-moss mb-2">Projeto Sob Medida</h3>
+                    <p class="text-wine font-semibold text-sm mb-6 uppercase tracking-wider">Pagamento Único</p>
+                    <div class="mb-6 flex items-end gap-1">
+                        <span class="text-4xl font-serif font-bold text-moss">R$ 1.500</span>
+                    </div>
+                    <ul class="space-y-4 text-moss/80 font-light text-sm mb-8 flex-1">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wine mt-0.5"></i> Site definitivo de alta performance, 100% sua propriedade.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wine mt-0.5"></i> Pagamento único sem taxas ou mensalidades escondidas.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-wine mt-0.5"></i> Design exclusivo focado em estética e conversão.</li>
+                    </ul>
+                    <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="w-full text-center py-3 rounded-full border border-moss text-moss hover:bg-moss hover:text-white transition-colors font-medium">Selecionar Plano</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Padrão do Seu Negócio & Ecossistema -->
+    <section id="padrao" class="py-24 px-6 bg-alabaster border-y border-moss/10 relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-wine/5 skew-x-12 -z-10"></div>
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-moss mb-6">A sua presença digital é o padrão do seu negócio.</h2>
+                <p class="text-moss/80 font-light mb-6 leading-relaxed">
+                    Você não serve um vinho premium em uma taça de plástico. Por que a vitrine digital da sua empresa deveria ser feita de forma amadora? Seu cliente julga a qualidade do seu serviço nos primeiros 3 segundos em que o seu site carrega (ou tenta carregar).
+                </p>
+                <p class="text-moss/80 font-light leading-relaxed">
+                    A <strong>Vinnero Web Design</strong> garante que a primeira impressão do seu cliente seja de excelência, requinte e velocidade absoluta.
+                </p>
+            </div>
+            
+            <!-- Box do Ecossistema -->
+            <div class="flex-1 w-full bg-white p-8 rounded-3xl border-2 border-wine/20 shadow-lg shadow-wine/5 relative">
+                <div class="absolute -top-5 left-8 bg-wine text-white text-xs font-bold uppercase tracking-wider py-1.5 px-4 rounded-full">
+                    Benefício Exclusivo
+                </div>
+                <div class="flex items-center gap-4 mb-4 mt-2">
+                    <div class="w-12 h-12 bg-wine/10 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-mobile-screen text-wine text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-moss">Ecossistema Vinnero</h3>
+                </div>
+                <p class="text-sm text-moss/80 font-light mb-4">
+                    Ao criar sua presença digital conosco, você passa a fazer parte do nosso ecossistema.
+                </p>
+                <div class="bg-alabaster p-4 rounded-xl border border-moss/10">
+                    <p class="text-sm text-moss font-medium">
+                        Clientes da Vinnero Web Design têm descontos exclusivos na contratação do <span class="text-wine font-bold">Aplicativo Vinnero</span> (Carta de vinhos e cardápio digital).
+                    </p>
+                    <p class="text-xs text-moss/60 mt-2 italic">
+                        *Válido para restaurantes, wine bars, lojas especializadas, delicatessens e empórios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <section id="contato" class="py-24 px-6 bg-moss text-center relative overflow-hidden">
+        <div class="absolute top-[-100px] left-[-100px] w-64 h-64 bg-wine rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+        <div class="absolute bottom-[-100px] right-[-100px] w-64 h-64 bg-wine rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+        
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-alabaster mb-6">Eleve o padrão do seu negócio.</h2>
+            <p class="text-lg text-alabaster/70 font-light mb-10 max-w-xl mx-auto">
+                Não deixe que um site lento ou confuso prejudique suas vendas. Entre em contato para um orçamento sem compromisso ou solicite uma análise gratuita do seu site atual.
+            </p>
+            <a href="https://wa.me/5531982989377?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20sites%20da%20Vinnero%20Web%20Design" target="_blank" class="inline-flex items-center gap-3 bg-wine hover:bg-wineLight text-white px-8 py-4 rounded-full font-medium transition-all shadow-xl shadow-wine/20 text-lg">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Falar com a Vinnero
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer base -->
+    <footer class="bg-moss py-8 border-t border-alabaster/10 text-center text-alabaster/50 text-sm font-light">
+        <p>&copy; 2026 Vinnero Web Design. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
